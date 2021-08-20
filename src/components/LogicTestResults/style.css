@@ -1,0 +1,25 @@
+.logicResults {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logicResults table {
+    min-width: 200px;
+}
+
+.logicResults table thead tr {
+    background: #bbb;
+}
+
+.logicResults table td,
+.logicResults table th {
+    padding: 4px;
+}
+
+.logicResults table th {
+    font-weight: bold;
+}
+
+.logicResults table tbody tr:nth-child(odd) {
+    background-color: #eee;
+}

@@ -1,0 +1,21 @@
+.logicResultsSummary {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logicResultsSummary table thead tr {
+    background: #bbb;
+}
+
+.logicResultsSummary table td,
+.logicResultsSummary table th {
+    padding: 4px;
+}
+
+.logicResultsSummary table th {
+    font-weight: bold;
+}
+
+.logicResultsSummary table tbody tr:nth-child(odd) {
+    background-color: #eee;
+}

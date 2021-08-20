@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065) -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>GraphQL Docs</title>
+    <style type="text/css">
+        ._1S63EXzJ2LWrq2TSLX8cAu:first-child {
+            margin-top: 0
+        }
+
+        ._1S63EXzJ2LWrq2TSLX8cAu:last-child {
+            margin-bottom: 0
+        }
+
+        ._1S63EXzJ2LWrq2TSLX8cAu h1 {
+            font-size: 1.3em
+        }
+
+        ._1S63EXzJ2LWrq2TSLX8cAu h2 {
+            font-size: 1.1em
+        }
+
+        ._1S63EXzJ2LWrq2TSLX8cAu h3 {
+            font-size: 1em;
+            -webkit-font-feature-settings: "c2sc";
+            font-feature-settings: "c2sc";
+            font-variant: small-caps
+        }
+
+        ._1S63EXzJ2LWrq2TSLX8cAu blockquote {
+            border-left: 8px solid #e8e8e8;
+            margin-top: -.3em;
+            padding-top: .3em;
+            margin-left: 20px;
+            padding-left: 12px;
+            margin-bottom: -.5em;
+            padding-bottom: .5em
+        }
+    </style>
+    <style type="text/css">
+        ._3_QndMLrl0DS7txXsKk5aM {
+            color: #5b2699
+        }
+
+        ._1QSb_Lywz03jNMCELm-GrU {
+            padding-right: 16px;
+            padding-right: 1rem;
+            white-space: nowrap
+        }
+
+        ._3a5669pwdwJabgmbtJHumc {
+            line-height: 1.3
+        }
+
+        ._3Xlbyq0Qo-JOAJLLx2z9-l {
+            color: #64381f
+        }
+
+        .NgU4gHjdynLJU2YSbF4ic {
+            color: #836c28
+        }
+
+        ._1ssUqN390ygEtVlxHSnU0e,
+        ._1ssUqN390ygEtVlxHSnU0e:active,
+        ._1ssUqN390ygEtVlxHSnU0e:hover,
+        ._1ssUqN390ygEtVlxHSnU0e:visited,
+        ._15sahXcXCjIULC63jwKqZE {
+            color: #007400
+        }
+    </style>
+    <style type="text/css"></style>
+    <style type="text/css">
+        ._3Q9rTqv61jz1TMbQgSC21Y {
+            margin-bottom: 3.2px;
+            margin-bottom: .2rem
+        }
+    </style>
+    <style type="text/css">
+        ._2u0NKWFUVO10_7zl5FH1bX {
+            margin-top: 16px;
+            margin-top: 1rem;
+            margin-left: 32px;
+            margin-left: 2rem;
+            width: calc(100% - 2rem)
+        }
+
+        ._14Noc9w-o_IUonJxsVOnBQ {
+            text-align: left;
+            font-size: 17.6px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #d9d9d9
+        }
+
+        ._3g8_wlJYIQqfvRx4Tdzt4u {
+            width: 100%
+        }
+    </style>
+    <style type="text/css">
+        ._2CI__araY4C94OAnkGP8Fv {
+            margin-bottom: 24px;
+            margin-bottom: 1.5rem
+        }
+
+        ._158AUimPZVUE217-1MuDQx {
+            margin-left: 32px;
+            margin-left: 2rem
+        }
+
+        ._158AUimPZVUE217-1MuDQx p {
+            margin-top: 0
+        }
+    </style>
+    <style type="text/css">
+        ._31nGuA4VcO5ASJ1Y-50NC0 {
+            margin-bottom: 20px
+        }
+
+        ._1gsHTtZCfZy0kwT90S9nZC,
+        ._1hBwBkrQ8ZlOyOUcLvjRpt {
+            margin-bottom: 8px;
+            margin-bottom: .5rem
+        }
+
+        ._1gsHTtZCfZy0kwT90S9nZC {
+            -webkit-font-feature-settings: "c2sc";
+            font-feature-settings: "c2sc";
+            font-variant: small-caps;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #4a4a4a;
+            border-bottom: 1px solid #d9d9d9;
+            margin-top: 16px;
+            margin-top: 1rem
+        }
+
+        ._2rkCQUiZ63eNMyTCRDL7GX {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <style type="text/css">
+        /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0 8px
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        [hidden],
+        template {
+            display: none
+        }
+
+        a {
+            background-color: transparent;
+            -webkit-text-decoration-skip: ink
+        }
+
+        a:active,
+        a:hover {
+            outline-width: 0
+        }
+
+        abbr[title] {
+            border-bottom: none;
+            text-decoration: underline;
+            text-decoration: underline dotted
+        }
+
+        b,
+        strong {
+            font-weight: inherit;
+            font-weight: bolder
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        mark {
+            background-color: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        img {
+            border-style: none
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font: inherit;
+            margin: 0
+        }
+
+        optgroup {
+            font-weight: 700
+        }
+
+        button,
+        input {
+            overflow: visible
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        [type=reset],
+        [type=submit],
+        button,
+        html [type=button] {
+            -webkit-appearance: button
+        }
+
+        [type=button]::-moz-focus-inner,
+        [type=reset]::-moz-focus-inner,
+        [type=submit]::-moz-focus-inner,
+        button::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+
+        [type=button]:-moz-focusring,
+        [type=reset]:-moz-focusring,
+        [type=submit]:-moz-focusring,
+        button:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+
+        fieldset {
+            border: 1px solid silver;
+            margin: 0 2px;
+            padding: .35em .625em .75em
+        }
+
+        legend {
+            box-sizing: border-box;
+            color: inherit;
+            display: table;
+            max-width: 100%;
+            padding: 0;
+            white-space: normal
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        [type=checkbox],
+        [type=radio] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        [type=number]::-webkit-inner-spin-button,
+        [type=number]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        [type=search]::-webkit-search-cancel-button,
+        [type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-input-placeholder {
+            color: inherit;
+            opacity: .54
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+    </style>
+    <style type="text/css">
+        ._2Wa9wu-awiDVZ9IXTPcyFt {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        ._38MtHDcUga2pYTxIRJJZ8o {
+            max-width: 800px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div data-reactroot="" class="_2Wa9wu-awiDVZ9IXTPcyFt">
+            <div class="_38MtHDcUga2pYTxIRJJZ8o">
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Query"></a><!-- react-text: 7 -->Root query<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>These are the first nodes in the graph that you can query.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">organization</span><span><!-- react-text: 16 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">id</span>
+                                <!-- react-text: 19 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 22 -->!<!-- /react-text --></span></span>
+                                <!-- react-text: 23 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 24 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Organization">Organization</a></div>
+                            <!-- react-empty: 26 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Organization"></a><!-- react-text: 30 -->Organization<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 41 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 44 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 46 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 50 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 52 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 56 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 58 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">name</span>
+                                <!-- react-text: 62 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 65 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 66 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">teams</span><span><!-- react-text: 153 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 156 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 161 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 166 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 171 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 173 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 174 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#TeamConnection">TeamConnection</a></div>
+                            <!-- react-empty: 176 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">employments</span><span><!-- react-text: 209 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 212 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 217 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 222 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 227 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 229 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 230 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentConnection">EmploymentConnection</a></div>
+                            <!-- react-empty: 232 -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="TeamConnection"></a><!-- react-text: 590 -->TeamConnection<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">pageInfo</span>
+                                <!-- react-text: 596 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#PageInfo">PageInfo</a><!-- react-text: 599 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 600 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">edges</span>
+                                <!-- react-text: 604 -->:
+                                <!-- /react-text --><span><span><!-- react-text: 607 -->[<!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#TeamEdge">TeamEdge</a><!-- react-text: 609 -->]<!-- /react-text --></span>
+                                <!-- react-text: 610 -->!
+                                <!-- /react-text -->
+                                </span>
+                            </div>
+                            <!-- react-empty: 611 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="EmploymentConnection"></a><!-- react-text: 640 -->EmploymentConnection<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">pageInfo</span>
+                                <!-- react-text: 646 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#PageInfo">PageInfo</a><!-- react-text: 649 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 650 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">edges</span>
+                                <!-- react-text: 654 -->:
+                                <!-- /react-text --><span><span><!-- react-text: 657 -->[<!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentEdge">EmploymentEdge</a><!-- react-text: 659 -->]<!-- /react-text --></span>
+                                <!-- react-text: 660 -->!
+                                <!-- /react-text -->
+                                </span>
+                            </div>
+                            <!-- react-empty: 661 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Node"></a><!-- react-text: 915 -->Node<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>An object with an ID</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implemented by</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Organization">Organization</a></li>
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#User">User</a></li>
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Team">Team</a></li>
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentTeamRelation">EmploymentTeamRelation</a></li>
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Employment">Employment</a></li>
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Title">Title</a></li>
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#LogicTestResult">LogicTestResult</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 1008 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 1011 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 1013 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="PageInfo"></a><!-- react-text: 1017 -->PageInfo<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">hasNextPage</span>
+                                <!-- react-text: 1023 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Boolean">Boolean</a><!-- react-text: 1026 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>When paginating forwards, are there more items?</p>
+                            </div>
+                            <!-- react-empty: 1028 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">hasPreviousPage</span>
+                                <!-- react-text: 1032 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Boolean">Boolean</a><!-- react-text: 1035 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>When paginating backwards, are there more items?</p>
+                            </div>
+                            <!-- react-empty: 1037 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">startCursor</span>
+                                <!-- react-text: 1041 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>When paginating backwards, the cursor to continue.</p>
+                            </div>
+                            <!-- react-empty: 1044 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">endCursor</span>
+                                <!-- react-text: 1048 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>When paginating forwards, the cursor to continue.</p>
+                            </div>
+                            <!-- react-empty: 1051 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="TeamEdge"></a><!-- react-text: 1077 -->TeamEdge<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">node</span>
+                                <!-- react-text: 1083 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Team">Team</a></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The item at the end of the edge</p>
+                            </div>
+                            <!-- react-empty: 1086 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">cursor</span>
+                                <!-- react-text: 1090 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 1093 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>A cursor for use in pagination</p>
+                            </div>
+                            <!-- react-empty: 1095 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="EmploymentEdge"></a><!-- react-text: 1121 -->EmploymentEdge<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">node</span>
+                                <!-- react-text: 1127 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Employment">Employment</a></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The item at the end of the edge</p>
+                            </div>
+                            <!-- react-empty: 1130 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">cursor</span>
+                                <!-- react-text: 1134 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 1137 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>A cursor for use in pagination</p>
+                            </div>
+                            <!-- react-empty: 1139 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="User"></a><!-- react-text: 1545 -->User<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 1556 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 1559 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 1561 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 1565 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 1567 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 1571 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 1573 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">email</span>
+                                <!-- react-text: 1577 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 1580 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 1581 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">emailConfirmed</span>
+                                <!-- react-text: 1585 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 1587 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">secondaryEmail</span>
+                                <!-- react-text: 1591 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <!-- react-empty: 1593 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">secondaryEmailConfirmed</span>
+                                <!-- react-text: 1597 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 1599 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">isActive</span>
+                                <!-- react-text: 1603 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Boolean">Boolean</a><!-- react-text: 1606 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 1607 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">firstName</span>
+                                <!-- react-text: 1611 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <!-- react-empty: 1613 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">lastName</span>
+                                <!-- react-text: 1617 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <!-- react-empty: 1619 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">born</span>
+                                <!-- react-text: 1623 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Date">Date</a></div>
+                            <!-- react-empty: 1625 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">gender</span>
+                                <!-- react-text: 1629 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EnumValue">EnumValue</a></div>
+                            <!-- react-empty: 1631 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">language</span>
+                                <!-- react-text: 1635 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <!-- react-empty: 1637 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">managedDepartments</span><span><!-- react-text: 1642 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 1645 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 1650 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 1655 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 1660 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 1662 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 1663 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DepartmentConnection">DepartmentConnection</a></div>
+                            <!-- react-empty: 1665 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">managedTeams</span><span><!-- react-text: 1670 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 1673 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 1678 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 1683 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 1688 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 1690 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 1691 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#TeamConnection">TeamConnection</a></div>
+                            <!-- react-empty: 1693 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">employments</span><span><!-- react-text: 1698 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">organizationId</span>
+                                <!-- react-text: 1701 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 1706 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 1711 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 1716 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 1721 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 1723 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 1724 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentConnection">EmploymentConnection</a></div>
+                            <!-- react-empty: 1726 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">supervising</span><span><!-- react-text: 1731 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 1734 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 1739 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 1744 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 1749 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 1751 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 1752 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentConnection">EmploymentConnection</a></div>
+                            <!-- react-empty: 1754 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">logicTest</span><span><!-- react-text: 1858 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 1861 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 1866 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 1871 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 1876 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 1878 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 1879 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#LogicTestResultConnection">LogicTestResultConnection</a></div>
+                            <!-- react-empty: 1881 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Team"></a><!-- react-text: 2111 -->Team<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 2122 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2124 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 2128 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2130 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 2134 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 2137 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 2139 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">name</span>
+                                <!-- react-text: 2143 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 2146 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 2147 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">description</span>
+                                <!-- react-text: 2151 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <!-- react-empty: 2153 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">managerId</span>
+                                <!-- react-text: 2157 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 2159 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">parentTeamId</span>
+                                <!-- react-text: 2163 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 2165 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">activeEmployees</span>
+                                <!-- react-text: 2175 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 2177 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">organization</span>
+                                <!-- react-text: 2181 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Organization">Organization</a></div>
+                            <!-- react-empty: 2183 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">manager</span>
+                                <!-- react-text: 2187 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#User">User</a></div>
+                            <!-- react-empty: 2189 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">parentTeam</span>
+                                <!-- react-text: 2193 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Team">Team</a></div>
+                            <!-- react-empty: 2195 -->
+                        </div>
+>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">subTeams</span><span><!-- react-text: 2206 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 2209 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 2214 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 2219 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 2224 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 2226 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 2227 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#TeamConnection">TeamConnection</a></div>
+                            <!-- react-empty: 2229 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">employments</span><span><!-- react-text: 2234 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 2237 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 2242 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 2247 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 2252 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 2254 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 2255 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentTeamRelationConnection">EmploymentTeamRelationConnection</a></div>
+                            <!-- react-empty: 2257 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="EmploymentTeamRelation"></a><!-- react-text: 2356 -->EmploymentTeamRelation<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 2367 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 2370 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 2372 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 2376 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2378 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 2382 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2384 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">startDate</span>
+                                <!-- react-text: 2388 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Date">Date</a></div>
+                            <!-- react-empty: 2390 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">endDate</span>
+                                <!-- react-text: 2394 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Date">Date</a></div>
+                            <!-- react-empty: 2396 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">employmentId</span>
+                                <!-- react-text: 2400 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a><!-- react-text: 2403 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 2404 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">teamId</span>
+                                <!-- react-text: 2408 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a><!-- react-text: 2411 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 2412 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">employment</span>
+                                <!-- react-text: 2416 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Employment">Employment</a></div>
+                            <!-- react-empty: 2418 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">team</span>
+                                <!-- react-text: 2422 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Team">Team</a></div>
+                            <!-- react-empty: 2424 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Employment"></a><!-- react-text: 2428 -->Employment<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 2439 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 2442 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 2444 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 2448 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2450 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 2454 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2456 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">userId</span>
+                                <!-- react-text: 2460 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a><!-- react-text: 2463 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 2464 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">isActive</span>
+                                <!-- react-text: 2468 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Boolean">Boolean</a><!-- react-text: 2471 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 2472 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">startDate</span>
+                                <!-- react-text: 2476 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Date">Date</a></div>
+                            <!-- react-empty: 2478 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">endDate</span>
+                                <!-- react-text: 2482 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Date">Date</a></div>
+                            <!-- react-empty: 2484 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">daysAtFirm</span>
+                                <!-- react-text: 2494 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 2496 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">yearsAtFirm</span>
+                                <!-- react-text: 2500 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 2502 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">monthsAtFirm</span>
+                                <!-- react-text: 2524 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 2526 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">organization</span>
+                                <!-- react-text: 2542 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Organization">Organization</a></div>
+                            <!-- react-empty: 2544 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">user</span>
+                                <!-- react-text: 2548 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#User">User</a></div>
+                            <!-- react-empty: 2550 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">title</span>
+                                <!-- react-text: 2554 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Title">Title</a></div>
+                            <!-- react-empty: 2556 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">supervisor</span>
+                                <!-- react-text: 2560 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#User">User</a></div>
+                            <!-- react-empty: 2562 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">teams</span><span><!-- react-text: 2595 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 2598 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 2603 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 2608 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 2613 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 2615 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 2616 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentTeamRelationConnection">EmploymentTeamRelationConnection</a></div>
+                            <!-- react-empty: 2618 -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Title"></a><!-- react-text: 2917 -->Title<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 2928 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 2931 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 2933 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 2937 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2939 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 2943 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 2945 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">text</span>
+                                <!-- react-text: 2949 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 2952 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 2953 -->
+                        </div>
+
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">employments</span><span><!-- react-text: 2970 -->(<!-- /react-text --><span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">before</span>
+                                <!-- react-text: 2973 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">after</span>
+                                <!-- react-text: 2978 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">first</span>
+                                <!-- react-text: 2983 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span><span><span>, </span><span class="_3qTEJI-SGaaBwcproq96Z9 _3_QndMLrl0DS7txXsKk5aM">last</span>
+                                <!-- react-text: 2988 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></span>
+                                <!-- react-text: 2990 -->)
+                                <!-- /react-text -->
+                                </span>
+                                <!-- react-text: 2991 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentConnection">EmploymentConnection</a></div>
+                            <!-- react-empty: 2993 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="LogicTestResult"></a><!-- react-text: 7068 -->LogicTestResult<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Implements</div>
+                        <ul class="_2rkCQUiZ63eNMyTCRDL7GX">
+                            <li><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Node">Node</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">id</span>
+                                <!-- react-text: 7079 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#ID">ID</a><!-- react-text: 7082 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The ID of the object.</p>
+                            </div>
+                            <!-- react-empty: 7084 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">created</span>
+                                <!-- react-text: 7088 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 7090 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">modified</span>
+                                <!-- react-text: 7094 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 7096 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">rawDataId</span>
+                                <!-- react-text: 7100 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 7102 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">dataTypeId</span>
+                                <!-- react-text: 7106 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a><!-- react-text: 7109 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 7110 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">userId</span>
+                                <!-- react-text: 7114 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a><!-- react-text: 7117 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 7118 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">date</span>
+                                <!-- react-text: 7122 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a></div>
+                            <!-- react-empty: 7124 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">score</span>
+                                <!-- react-text: 7128 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Float">Float</a></div>
+                            <!-- react-empty: 7130 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">numberOfQuestions</span>
+                                <!-- react-text: 7134 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 7136 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">numberOfCorrectAnswers</span>
+                                <!-- react-text: 7140 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 7142 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">duration</span>
+                                <!-- react-text: 7146 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Float">Float</a></div>
+                            <!-- react-empty: 7148 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">logicTestId</span>
+                                <!-- react-text: 7152 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#Int">Int</a></div>
+                            <!-- react-empty: 7154 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">startTime</span>
+                                <!-- react-text: 7158 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 7160 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">submitTime</span>
+                                <!-- react-text: 7164 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#DateTime">DateTime</a></div>
+                            <!-- react-empty: 7166 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">user</span>
+                                <!-- react-text: 7170 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#User">User</a></div>
+                            <!-- react-empty: 7172 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="LogicTestResultConnection"></a><!-- react-text: 8259 -->LogicTestResultConnection<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">pageInfo</span>
+                                <!-- react-text: 8265 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#PageInfo">PageInfo</a><!-- react-text: 8268 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 8269 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">edges</span>
+                                <!-- react-text: 8273 -->:
+                                <!-- /react-text --><span><span><!-- react-text: 8276 -->[<!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#LogicTestResultEdge">LogicTestResultEdge</a><!-- react-text: 8278 -->]<!-- /react-text --></span>
+                                <!-- react-text: 8279 -->!
+                                <!-- /react-text -->
+                                </span>
+                            </div>
+                            <!-- react-empty: 8280 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="EmploymentTeamRelationConnection"></a><!-- react-text: 8547 -->EmploymentTeamRelationConnection<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">pageInfo</span>
+                                <!-- react-text: 8553 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#PageInfo">PageInfo</a><!-- react-text: 8556 -->!<!-- /react-text --></span></div>
+                            <!-- react-empty: 8557 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">edges</span>
+                                <!-- react-text: 8561 -->:
+                                <!-- /react-text --><span><span><!-- react-text: 8564 -->[<!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentTeamRelationEdge">EmploymentTeamRelationEdge</a><!-- react-text: 8566 -->]<!-- /react-text --></span>
+                                <!-- react-text: 8567 -->!
+                                <!-- /react-text -->
+                                </span>
+                            </div>
+                            <!-- react-empty: 8568 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="LogicTestResultEdge"></a><!-- react-text: 9680 -->LogicTestResultEdge<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">node</span>
+                                <!-- react-text: 9686 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#LogicTestResult">LogicTestResult</a></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The item at the end of the edge</p>
+                            </div>
+                            <!-- react-empty: 9689 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">cursor</span>
+                                <!-- react-text: 9693 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 9696 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>A cursor for use in pagination</p>
+                            </div>
+                            <!-- react-empty: 9698 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="EmploymentTeamRelationEdge"></a><!-- react-text: 9812 -->EmploymentTeamRelationEdge<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1gsHTtZCfZy0kwT90S9nZC">Fields</div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">node</span>
+                                <!-- react-text: 9818 -->:
+                                <!-- /react-text --><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#EmploymentTeamRelation">EmploymentTeamRelation</a></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>The item at the end of the edge</p>
+                            </div>
+                            <!-- react-empty: 9821 -->
+                        </div>
+                        <div class="_2CI__araY4C94OAnkGP8Fv">
+                            <div class="_3Q9rTqv61jz1TMbQgSC21Y"><span class="pfwgw1KVkaL-Jspb7XsLn _3Xlbyq0Qo-JOAJLLx2z9-l">cursor</span>
+                                <!-- react-text: 9825 -->:
+                                <!-- /react-text --><span><a class="_3Ue4q58Ya6q2FCTVkZKllk _1ssUqN390ygEtVlxHSnU0e" href="#String">String</a><!-- react-text: 9828 -->!<!-- /react-text --></span></div>
+                            <div class="_1S63EXzJ2LWrq2TSLX8cAu _158AUimPZVUE217-1MuDQx">
+                                <p>A cursor for use in pagination</p>
+                            </div>
+                            <!-- react-empty: 9830 -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="ID"></a><!-- react-text: 10673 -->ID<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>ID</code> scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as <code>"4"</code>) or integer (such as <code>4</code>) input value will be accepted as an ID.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="DateTime"></a><!-- react-text: 10679 -->DateTime<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>DateTime</code> scalar type represents a DateTime value as specified by
+                                <a href="https://en.wikipedia.org/wiki/ISO_8601">iso8601</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="String"></a><!-- react-text: 10685 -->String<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>String</code> scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Boolean"></a><!-- react-text: 10691 -->Boolean<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>Boolean</code> scalar type represents <code>true</code> or <code>false</code>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Int"></a><!-- react-text: 10697 -->Int<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>Int</code> scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31 - 1) and 2^31 - 1 since represented in JSON as double-precision floating point numbers specifiedby <a href="http://en.wikipedia.org/wiki/IEEE_floating_point">IEEE 754</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Date"></a><!-- react-text: 10703 -->Date<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>Date</code> scalar type represents a Date value as specified by
+                                <a href="https://en.wikipedia.org/wiki/ISO_8601">iso8601</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="EnumValue"></a><!-- react-text: 10709 -->EnumValue<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>Custom type EnumValue Returns the value of an enum from database. Supports Integers, floats and strings</p>
+                            <p>If a String is passed from client to database, it is converted to uppercase.</p>
+                            <p>If a non-supported type is fetched, ValueError is raised</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="JSONString"></a><!-- react-text: 10715 -->JSONString<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>JSON String</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="_31nGuA4VcO5ASJ1Y-50NC0">
+                    <h2 class="_1hBwBkrQ8ZlOyOUcLvjRpt"><a name="Float"></a><!-- react-text: 10721 -->Float<!-- /react-text --></h2>
+                    <div>
+                        <div class="_1S63EXzJ2LWrq2TSLX8cAu ">
+                            <p>The <code>Float</code> scalar type represents signed double-precision fractional values as specified by <a href="http://en.wikipedia.org/wiki/IEEE_floating_point">IEEE 754</a>. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
